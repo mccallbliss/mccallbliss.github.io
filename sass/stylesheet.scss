@@ -9,3 +9,22 @@
 .code {
     font: 0.8em/1.6 Monaco, Mono-Space, monospace;
 }
+
+a {
+	text-decoration: none;
+	color: #08C;
+	transition: all 0.3s ease-out;
+	position: relative;
+	padding: .5em;
+	margin: -.5em;
+}
+
+a:hover { 
+	color: #0AF; 
+}
+
+*, *:before, *:after {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
