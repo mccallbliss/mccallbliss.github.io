@@ -1,13 +1,15 @@
-.content {
-  font: 1em/1.4 Segoe, "Segoe UI", "Helvetica Neue", Arial, sans-serif;
-}
-
-.title {
-  font: 1.7em/1.2 Baskerville, "Baskerville old face", "Hoefler Text", Garamond, "Times New Roman", serif;
-}
-
-.code {
-  font: 0.8em/1.6 Monaco, Mono-Space, monospace;
+/*
+ * Branding Variables 
+ */
+/* Typography */
+/* Colors */
+/*
+ * Initial resets / default styles
+ */
+*, *:before, *:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 a {
@@ -23,10 +25,66 @@ a:hover {
   color: #0AF;
 }
 
-*, *:before, *:after {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
+body {
+  background-color: #050505;
+  color: #F7F7F7;
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+}
+
+/*
+ * Page Styling
+ */
+.sidebar {
+  position: fixed;
+  top: 0;
+  width: 100vh;
+  height: 10em;
+  background: 0 0;
+  overflow: hidden;
+  display: none;
+  -webkit-transform: rotate(90deg);
+  transform: rotate(90deg);
+  left: 100%;
+  top: 0;
+  -webkit-transform-origin: top left;
+  transform-origin: top left;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+nav .nav-item {
+  margin: 10px;
+}
+nav a {
+  color: #F7F7F7;
+}
+nav a:hover {
+  color: #39ff14;
+}
+
+section {
+  margin: 100px;
+}
+
+section.landing h1 {
+  margin: 0;
+  font-size: 200px;
+  font-weight: 400;
+  max-width: 400px;
+  line-height: 180px;
+}
+
+/* 
+ * Media Queries 
+ */
+@media (min-width: 720px) {
+  .sidebar {
+    display: flex;
+  }
 }
 
 /*# sourceMappingURL=stylesheet.css.map */
